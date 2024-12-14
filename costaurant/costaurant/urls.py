@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('menus/', include('menus.urls')),
     path('foods/', include('foods.urls')),
     path('', include('foods.urls')), # 홈페이지에 해당하는 URL 패턴
+    path('cities/', include('cities.urls')),
 ]
